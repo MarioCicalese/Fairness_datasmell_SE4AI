@@ -51,6 +51,19 @@ We employed **AI Fairness 360 (AIF360)** to compute:
 - **SPD (Statistical Parity Difference):** Measures outcome disparity between groups.
 - **AOD (Average Odds Difference):** Evaluates average difference in TPR and FPR.
 - **EOD (Equal Opportunity Difference):** Assesses equality in true positive rates.
+  
+### 📖 Interpreting Fairness Metric Values
+- **SPD (Statistical Parity Difference):**
+  - A value less than 0 means the unprivileged group has a lower probability of receiving a favorable outcome compared to the privileged group.
+  - A value greater than 0 indicates the opposite. A value close to 0 suggests statistical parity between groups.
+
+- **AOD (Average Odds Difference):**
+  - A value less than 0 means the unprivileged group has lower True Positive Rates (TPR) and higher False Positive Rates (FPR) compared to the privileged group.
+  - A value greater than 0 indicates the reverse. A value near 0 indicates balanced error rates across groups.
+
+- **EOD (Equal Opportunity Difference):**
+  - A value less than 0 means the unprivileged group has a lower TPR, i.e., a lower chance of being correctly classified with a favorable outcome.
+  - A value greater than 0 implies the privileged group has a disadvantage. Values close to 0 indicate equal opportunity.
 
 ### 🧼 Data Smell Detection
 We used the **DSD (Data Smell Detection)** tool to detect issues such as:
