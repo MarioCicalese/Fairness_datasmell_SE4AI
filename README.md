@@ -62,6 +62,7 @@ We used the **DSD (Data Smell Detection)** tool to detect issues such as:
 - Extreme Values
 - Suspect Sign
 
+🔗 [Paper Link](https://ieeexplore.ieee.org/document/9796422) • [GitHub Tool Repository](https://github.com/mkerschbaumer/rb-data-smell-detection)
 ### 🧠 Models Trained
 We trained standard ML classifiers:
 
@@ -115,7 +116,7 @@ The project followed **two iterative pipelines**, one for each RQ.
 - Performance generally **improved** on cleaned data, but some raw models with mitigation still performed competitively.
 - Certain algorithms (like Equalized Odds) were more robust to data smells.
 
-> ✅ **Answer to RQ2:** Yes, data smells impact the effectiveness of bias mitigation algorithms.
+> ⚠️ **Answer to RQ2:** The results do not allow for a definitive answer. The impact of data smells on the performance of bias mitigation algorithms appears to be non-uniform and context-dependent. In some cases, algorithms performed better on tidy datasets, while in others, the presence of data smells did not significantly hinder – or even slightly improved – the metrics. Therefore, more extensive experimentation is needed to generalize any conclusion regarding this relationship.
 
 ---
 
@@ -135,8 +136,22 @@ This study confirms the critical role of **data quality** in achieving fair ML o
 ## 📂 Repository Structure
 
 ```plaintext
-📁 data/                 # Raw and cleaned datasets
-📁 notebooks/            # Jupyter notebooks for analysis
-📁 models/               # Trained model files
-📄 report.pdf            # Final project report
+📁 GermanCredit/                # Raw dataset & fairness analysis
+📁 adult/            # Raw & tidy datasets + scripts for fairness analysis & bias mitigation algorithms
+📁 bank/              # Raw & tidy datasets + scripts for fairness analysis & bias mitigation algorithms
+📁 compas/             # Raw & tidy datasets + scripts for fairness analysis & bias mitigation algorithms
+📁 docs/               # pdf documentation and pptx/pdf project presentation
 📄 README.md             # This file
+📄 requirements.txt            # Lists all the Python packages needed to run the project.
+```
+---
+## 👨‍💻 Author
+
+**Mario Cicalese**
+🔗 [LinkedIn](http://www.linkedin.com/in/mario-cicalese-5b26a5283) • [GitHub](https://github.com/MarioCicalese)
+
+**Paolo Carmine Valletta**
+🔗 [LinkedIn](https://www.linkedin.com/in/paolo-carmine-valletta-4b1415279/) • [GitHub](https://github.com/PaoloCarmine1201)
+
+**Annamaria Basile**
+🔗 [LinkedIn](https://www.linkedin.com/in/annamaria-basile-2b360924a/) • [GitHub](https://github.com/Annamariabasile)
